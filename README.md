@@ -105,24 +105,24 @@ TARGET_DIRECTORY="${PWD}/"
 
 **Bootstrapping a Project**
 
-// The script assumes you've set sane defaults so simply calling it is enough to get you rolling (though you'll be asked to confirm that you want to use the current directory, and its name, as the root directory of a new project).
+// the script assumes you've set sane defaults so simply calling it is enough to get you rolling (though you'll be asked to confirm that you want to use the current directory, and its name, as the root directory of a new project).
 
 ``` sh
 gitinitjs.sh
 ```
 
-// Calling with -p will bootstrap a project called "ninjasgonewild" in a directory called "ninjasgonewild" (provided the directory doesn't already exist). By default, this project directory is placed wherever the script is invoked from but you can alter the behavior by changing the "TARGET_DIRECTORY" variable to a path of your choice.
+// calling with -p will bootstrap a project called "ninjasgonewild" in a directory called "ninjasgonewild" (provided the directory doesn't already exist). By default, this project directory is placed wherever the script is invoked from but you can alter the behavior by changing the "TARGET_DIRECTORY" variable to a path of your choice.
 
 ``` sh
 gitinitjs.sh -p ninjasgonewild
 ```
 
-//  Calling with a flag will override defaults. Eg, the following would force the "none" license (which generates a COPYRIGHT file instead of a LICENSE file).  
+//  calling with a flag will override defaults. Eg, the following would force the "none" license (which generates a COPYRIGHT file instead of a LICENSE file).  
 ``` sh
 gitinitjs.sh -l none
 ```
 
-// You can force the script to completely override all defaults by explicitly providing each parameter (-a author name, -e author email, -g github.com username, -l license type, -n npmjs.com username, -p project name, -t project target directory, and -u author url):
+// you can force the script to completely override all defaults by explicitly providing each parameter (-a author name, -e author email, -g github.com username, -l license type, -n npmjs.com username, -p project name, -t project target directory, and -u author url):
 ``` sh
 gitinitjs.sh -a "Christopher Alesund" -e getright@nip.gl -g GeT_RiGhT -l unlicense -n GeT_RiGhT -p ninjasgonewild -t /root/home/christopher -u http://nip.gl/players/get_right
 ```
