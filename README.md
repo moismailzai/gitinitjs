@@ -21,6 +21,7 @@
 
 ``` sh
 git clone https://github.com/moismailzai/gitinitjs
+chmod +x gitinitjs.sh
 ```
 
 **Bower**: [bower](https://bower.io/search/?q=gitinitjs)
